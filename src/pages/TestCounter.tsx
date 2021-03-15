@@ -21,11 +21,7 @@ function TestCounter(props: Props) {
   };
 
   const decreaseCounter = () => {
-    if (counter !== 0) {
-      setCounter(counter - 1);
-    } else {
-      alert("Minimum value reached!");
-    }
+    counter !== 0 ? setCounter(counter - 1) : alert("Minimum value reached!");
   };
 
   const increaseCounterby5 = () => {
@@ -33,11 +29,7 @@ function TestCounter(props: Props) {
   };
 
   const decreaseCounterby5 = () => {
-    if (counter >= 5) {
-      setCounter(counter - 5);
-    } else {
-      alert("Minimum value reached!");
-    }
+    counter >= 5 ? setCounter(counter - 5) : alert("Minimum value reached!");
   };
 
   return (
